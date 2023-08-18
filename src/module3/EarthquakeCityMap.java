@@ -58,6 +58,8 @@ public class EarthquakeCityMap extends PApplet {
 	        map = new UnfoldingMap(this, 200, 50, 700, 500, new MBTilesMapProvider(mbTilesString));
 	        earthquakesURL = "2.5_week.atom";
 	    } else {
+		// If you want to use Google map provider, delete and paste this "Google.GoogleMapProvider()" instead of 
+		// "OpenStreetMap.OpenStreetMapProvider" in the next line
 	    	map = new UnfoldingMap(this, 200, 50, 700, 500, new OpenStreetMap.OpenStreetMapProvider() );
 	        		// IF YOU WANT TO TEST WITH A LOCAL FILE, uncomment the next line
 	     			earthquakesURL = "2.5_week.atom";
